@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         String jsonStr="{'1': {'name':'haha', 'age':11},'2': {'name':'nihao', 'age':22}}";
         Map<String, User> users = gson.fromJson(jsonStr, new TypeToken<Map<String,User>>() {}.getType());
         for(String key:users.keySet()){
-            Log.i("MainActivity","parseArrayList key:"+key+" user:"+users.get(key));
+            Log.i("MainActivity","parseMap key:"+key+" user:"+users.get(key));
         }
     }
 
